@@ -3,6 +3,7 @@ import { IoIosMail } from "react-icons/io";
 import { IoEye } from "react-icons/io5";
 import { IoIosClose } from "react-icons/io";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const LoginForm = () => {
     const [pass, setPass] = useState(false);
@@ -41,7 +42,9 @@ const LoginForm = () => {
                 </button>
                 <div className="flex gap-4">
                     <h2 className="text-lightblack">Dont have an account ?</h2>
-                    <h3 className="hover:underline cursor-pointer underline-offset-[3px] font-semibold">Sign Up</h3>
+                    <Link to={"/signup"} className="hover:underline cursor-pointer underline-offset-[3px] font-semibold">
+                        Sign Up
+                    </Link>
                 </div>
             </div>
         </section>
