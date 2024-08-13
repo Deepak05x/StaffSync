@@ -4,7 +4,7 @@ import { IoEye } from "react-icons/io5";
 import { IoIosClose } from "react-icons/io";
 import { useState } from "react";
 
-const SignUpForm = () => {
+const LoginForm = () => {
     const [pass, setPass] = useState(false);
 
     const togglePass = () => {
@@ -21,10 +21,6 @@ const SignUpForm = () => {
                 </div>
                 <div className="bg-lightgrey px-8 py-4 rounded-full flex items-center sm:gap-12 ssm:gap-2">
                     <input type={`${pass ? "text" : "password"}`} placeholder="Password" className="text-dark bg-inherit outline-none border-none text-lg" />
-                    {pass ? <IoIosClose className="text-xl cursor-pointer" onClick={() => togglePass()} /> : <IoEye className="text-xl cursor-pointer" onClick={() => togglePass()} />}
-                </div>
-                <div className="bg-lightgrey px-8 py-4 rounded-full flex items-center sm:gap-12 ssm:gap-2">
-                    <input type={`${pass ? "text" : "password"}`} placeholder="Confirm Password" className="text-dark bg-inherit outline-none border-none text-lg" />
                     {pass ? <IoIosClose className="text-xl cursor-pointer" onClick={() => togglePass()} /> : <IoEye className="text-xl cursor-pointer" onClick={() => togglePass()} />}
                 </div>
             </div>
@@ -52,4 +48,4 @@ const SignUpForm = () => {
     );
 };
 
-export default SignUpForm;
+export default LoginForm;

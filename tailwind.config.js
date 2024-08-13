@@ -10,16 +10,18 @@ export default {
         "sm" : "425px",
         "md" : "768px",
         "lg" : "1024px",
-        "xl" : "1440px",
+        "xl" : "1280px",
+        "2xl" : "1440px",
       },
     extend: {
       screens:{
         "ssm" : "320px",
       },
       colors:{
-        light: "#f5f5f5",
+        light: "#EAEBF2FF",
         dark : "#1b1b1b",
-        lightgrey: "#e6e4e4"
+        lightgrey: "#e6e4e4",
+        lightblack: "#57636c"
       },
     },
   },

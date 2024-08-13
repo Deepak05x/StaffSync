@@ -4,7 +4,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Image = () => {
     return (
-        <section className="flex items-center">
+        <section className="flex justify-end">
             <LazyLoadImage src="/library.jpeg" alt="image" effect="blur" className="w-[45rem] h-[100vh]" />
         </section>
     );
