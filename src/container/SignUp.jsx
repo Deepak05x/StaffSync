@@ -1,7 +1,7 @@
 import React from "react";
 import { lazy, Suspense } from "react";
 
-const Logo = lazy(() => import("../components/logo.jsx"));
+const Logo = lazy(() => import("../components/Logo.jsx"));
 const Image = lazy(() => import("../components/Image.jsx"));
 const SignUpForm = lazy(() => import("../components/SignUpForm.jsx"));
 
