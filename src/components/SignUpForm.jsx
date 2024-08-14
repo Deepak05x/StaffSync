@@ -4,6 +4,7 @@ import { IoEye } from "react-icons/io5";
 import { IoIosClose } from "react-icons/io";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const SignUpForm = () => {
     const [pass, setPass] = useState(false);
@@ -13,8 +14,8 @@ const SignUpForm = () => {
     };
 
     return (
-        <section className="flex flex-col items-center justify-center 2xl:py-[7rem] 2xl:gap-8 xl:py-[7rem] lg:py-[7rem]  ssm:gap-5 sm:gap-6 md:py-[7rem] sm:py-[7rem] ssm:py-[5rem] ">
-            <h1 className="lg:text-4xl ssm:text-[2.6rem] font-medium">Welcome Back</h1>
+        <section className="flex flex-col items-center justify-center 2xl:py-[8rem] 2xl:gap-8 ssm:gap-5 sm:gap-6 sm:py-[7rem] ssm:py-[5rem] ">
+            <h1 className="lg:text-4xl ssm:text-[2.6rem] font-medium">Register Now</h1>
             <div className="flex flex-col items-center gap-4 sm:mt-0 ssm:mt-[2rem]">
                 <div className="bg-lightgrey px-8 py-4 rounded-full flex items-center sm:gap-12 ssm:gap-2">
                     <input type="email" placeholder="Email" className="text-dark bg-inherit outline-none border-none text-lg" />
