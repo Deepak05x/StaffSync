@@ -55,7 +55,7 @@ const Login = () => {
                         transition={{ duration: 1, ease: "easeInOut" }}
                         className="flex flex-row justify-between w-full h-[100vh]" // Ensuring full height for the main content
                     >
-                        <div className="w-[60%] h-full">
+                        <div className="lg:w-[60%] ssm:w-[100%] h-full">
                             <div className="xl:px-8 lg:px-6 sm:px-4 ssm:px-2 py-4 h-[10%]">
                                 <Logo />
                             </div>

@@ -8,7 +8,7 @@ const ThemeToggler = () => {
     const { dark, toggleTheme } = useContext(ThemeSwitcher);
 
     return (
-        <div onClick={toggleTheme} style={{ cursor: "pointer" }}>
+        <div onClick={() => toggleTheme()} className="cursor-pointer bg-dark text-white dark:bg-light dark:text-dark  items-center flex justify-center p-3 rounded-xl text-2xl">
             {dark ? <IoMoonOutline /> : <IoSunnyOutline />}
         </div>
     );
