@@ -55,13 +55,15 @@ const Login = () => {
                         transition={{ duration: 1, ease: "easeInOut" }}
                         className="flex flex-row justify-between w-full h-[100vh]" // Ensuring full height for the main content
                     >
-                        <div className="flex-1 w-[60%]">
-                            <div className="xl:px-8 lg:px-6 sm:px-4 ssm:px-2 py-4">
+                        <div className="w-[60%] h-full">
+                            <div className="xl:px-8 lg:px-6 sm:px-4 ssm:px-2 py-4 h-[10%]">
                                 <Logo />
                             </div>
-                            <LoginForm />
+                            <div className="flex items-center justify-center h-[90%]">
+                                <LoginForm />
+                            </div>
                         </div>
-                        <div className="flex-none w-[40%] lg:flex hidden justify-end">
+                        <div className=" w-[40%] h-full lg:flex hidden justify-end">
                             <Image />
                         </div>
                     </motion.section>
