@@ -13,7 +13,7 @@ const LoginForm = () => {
     };
 
     return (
-        <section className="flex flex-col items-center justify-center 2xl:py-[10rem] 2xl:gap-8 xl:py-[8rem] lg:py-[7rem]  ssm:gap-5 sm:gap-6 md:py-[8rem] sm:py-[8rem] ssm:py-[5rem] ">
+        <section className="flex flex-col items-center  2xl:pt-[10rem]  2xl:gap-8 xl:pt-[8rem] lg:pt-[7rem]  ssm:gap-5 sm:gap-6 md:pt-[8rem] sm:pt-[8rem] ssm:pt-[5rem] ">
             <h1 className="lg:text-4xl ssm:text-[2.6rem] font-medium">Welcome Back</h1>
             <div className="flex flex-col items-center gap-4 sm:mt-0 ssm:mt-[2rem]">
                 <div className="bg-lightgrey px-8 py-4 rounded-full flex items-center sm:gap-12 ssm:gap-2">
