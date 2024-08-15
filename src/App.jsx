@@ -4,7 +4,6 @@ import { Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 
 const Home = lazy(() => import("./container/Home.jsx"));
-const Main = lazy(() => import("./container/Main.jsx"));
 const Login = lazy(() => import("./container/Login.jsx"));
 const SignUp = lazy(() => import("./container/SignUp.jsx"));
 
@@ -14,8 +13,7 @@ const App = () => {
             <ThemeProvider>
                 <Suspense fallback={<></>}>
                     <Routes>
-                        <Route element={<Main />} path="/" />
-                        <Route element={<Login />} path="/login" />
+                        <Route element={<Login />} path="/" />
                         <Route element={<SignUp />} path="/signup" />
                         <Route element={<Home />} path="/home" />
                     </Routes>
