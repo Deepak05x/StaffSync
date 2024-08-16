@@ -9,7 +9,7 @@ const SignUp = lazy(() => import("./container/SignUp.jsx"));
 
 const App = () => {
     return (
-        <main className="w-full min-h-screen bg-white dark:bg-black">
+        <main className="w-full min-h-screen bg-white dark:bg-dark">
             <ThemeProvider>
                 <Suspense fallback={<></>}>
                     <Routes>

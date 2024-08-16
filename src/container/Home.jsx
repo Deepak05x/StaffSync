@@ -6,9 +6,8 @@ const HomePageHeader = lazy(() => import("../components/HomePageHeader.jsx"));
 
 const Home = () => {
     return (
-        <section className="bg-white dark:bg-dark dark:text-light">
+        <section className="bg-light dark:bg-dark dark:text-light">
             <HomePageHeader />
-
             <HomePageMobile />
         </section>
     );

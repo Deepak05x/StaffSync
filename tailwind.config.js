@@ -18,7 +18,7 @@ export default {
         "ssm" : "320px",
       },
       colors:{
-        light: "#EAEBF2FF",
+        light: "white",
         dark : "#1b1b1b",
         lightgrey: "#e6e4e4",
         lightblack: "#57636c"
