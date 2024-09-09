@@ -11,11 +11,8 @@ const HomePageHeader = () => {
     return (
         <section className="lg:flex hidden items-center justify-between py-5 px-10">
             <Logo />
-            <div className="flex xl:w-[50%] lg:w-[40%] items-center justify-between gap-2">
-                <input type="text" placeholder="Search Faculty" className="border-dark dark:bg-dark dark:border-light border-2 text-xl px-8 py-2 rounded-xl w-full outline-none dark:border-[1.9px]" />
-                <IoIosSearch className="text-[2rem] font-bold" />
-            </div>
             <div className="flex items-center gap-6">
+                <IoIosSearch className="text-[3rem] px-3 py-2 font-bold cursor-pointer bg-dark text-light rounded-full" />
                 <ThemeToggler />
                 <button aria-label="Request" className="bg-dark dark:bg-light dark:text-dark dark:font-semibold text-white rounded-xl px-6 py-3">
                     View Request

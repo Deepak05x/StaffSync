@@ -42,8 +42,8 @@ const Login = () => {
                     className="w-full h-[100vh] flex items-center justify-center overflow-hidden"
                 >
                     <section className="flex flex-row items-center">
-                        <LazyLoadImage src="/logo.jpeg" alt="logo" effect="blur" className="w-[15rem] h-[15rem]" />
-                        <h1 className="text-6xl font-semibold tracking--wide">StaffSync</h1>
+                        <LazyLoadImage src="/logo.jpeg" alt="logo" effect="blur" className="lg:w-[13rem] lg:h-[13rem] sm:w-[10rem] sm:h-[10rem] ssm:w-[8rem] ssm:h-[8rem]" />
+                        <h1 className="lg:text-5xl sm:text-4xl ssm:text-3xl font-semibold tracking--wide">StaffSync</h1>
                     </section>
                 </motion.div>
             ) : (

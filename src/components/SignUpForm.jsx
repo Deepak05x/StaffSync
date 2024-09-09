@@ -14,9 +14,9 @@ const SignUpForm = () => {
     };
 
     return (
-        <section className="flex flex-col items-center justify-center 2xl:gap-8 ssm:gap-5 sm:gap-6">
+        <form className="flex flex-col items-center justify-center 2xl:gap-8 ssm:gap-5 sm:gap-6">
             <h1 className="lg:text-4xl ssm:text-[2.6rem] font-medium">Register Now</h1>
-            <div className="flex flex-col items-center gap-4 sm:mt-0 ssm:mt-[2rem]">
+            <section className="flex flex-col items-center gap-4 sm:mt-0 ssm:mt-[2rem]">
                 <div className="bg-lightgrey px-8 py-4 rounded-full flex items-center sm:gap-12 ssm:gap-2">
                     <input type="email" placeholder="Email" className="text-dark bg-inherit outline-none border-none text-lg" />
                     <IoIosMail className="text-xl" />
@@ -29,8 +29,8 @@ const SignUpForm = () => {
                     <input type={`${pass ? "text" : "password"}`} placeholder="Confirm Password" className="text-dark bg-inherit outline-none border-none text-lg" />
                     {pass ? <IoIosClose className="text-xl cursor-pointer" onClick={() => togglePass()} /> : <IoEye className="text-xl cursor-pointer" onClick={() => togglePass()} />}
                 </div>
-            </div>
-            <div className="flex flex-row items-center gap-8 sm:py-0 ssm:py-[1rem]">
+            </section>
+            <section className="flex flex-row items-center gap-8 sm:py-0 ssm:py-[1rem]">
                 <div className="flex items-center gap-2 text-xl font-medium">
                     <input type="radio" id="student" name="sign" />
                     <label htmlFor="student">Student</label>
@@ -39,9 +39,9 @@ const SignUpForm = () => {
                     <input type="radio" id="teacher" name="sign" />
                     <label htmlFor="teacher">Faculty</label>
                 </div>
-            </div>
+            </section>
 
-            <div className="flex flex-col items-center gap-4">
+            <section className="flex flex-col items-center gap-4">
                 <button aria-label="SignIn" className="bg-dark text-lg font-medium sm:px-12 sm:py-2 ssm:px-24 ssm:py-[0.6rem] text-light rounded-full">
                     Sign Up
                 </button>
@@ -51,8 +51,8 @@ const SignUpForm = () => {
                         Sign In
                     </Link>
                 </div>
-            </div>
-        </section>
+            </section>
+        </form>
     );
 };
 
