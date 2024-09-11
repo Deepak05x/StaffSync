@@ -20,7 +20,7 @@ const HomePageHeader = () => {
     };
 
     return (
-        <>
+        <nav>
             <section className="lg:flex hidden w-full items-center justify-between py-5 px-10">
                 <Logo />
                 {search && (
@@ -79,7 +79,7 @@ const HomePageHeader = () => {
                     </section>
                 )}
             </>
-        </>
+        </nav>
     );
 };
 
