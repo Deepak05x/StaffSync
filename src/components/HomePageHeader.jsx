@@ -1,8 +1,6 @@
 import React from "react";
 import { lazy } from "react";
 import { IoIosSearch } from "react-icons/io";
-import { IoMdMenu } from "react-icons/io";
-import { IoClose } from "react-icons/io5";
 
 const Logo = lazy(() => import("../components/Logo.jsx"));
 const ThemeToggler = lazy(() => import("../components/ThemeToggler.jsx"));
