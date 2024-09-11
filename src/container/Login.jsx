@@ -15,7 +15,7 @@ const Login = () => {
 
         if (!hasShownSplash) {
             const timer = setTimeout(() => {
-                setSplash(true);
+                setSplash(false);
                 sessionStorage.setItem("hasShownSplash", "true");
                 document.body.style.overflow = "auto";
             }, 2000);
