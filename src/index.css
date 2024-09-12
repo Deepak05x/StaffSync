@@ -14,18 +14,5 @@
     font-family: "Sen", sans-serif;
 }
 
-@keyframes slide{
-    from{
-        transform : translateY(0);
-    }
-    to{
-        transform : translateY(-100%);
-    }
-}
-.pfpslide{
-    animation : 10s slide infinite linear;
-}
-.slide1:hover .pfpslide{
-    animation-play-state : paused;
-}
+
 
