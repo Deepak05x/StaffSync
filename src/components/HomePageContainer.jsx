@@ -5,7 +5,7 @@ const HomePageTitle = lazy(() => import("../components/HomePageTitle.jsx"));
 
 const HomePageContainer = () => {
     return (
-        <section className="flex items-center py-12 w-full h-full px-12">
+        <section className="flex items-center py-8 w-full h-full px-12">
             <HomePageTitle />
         </section>
     );

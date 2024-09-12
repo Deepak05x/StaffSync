@@ -49,7 +49,7 @@ const HomePageHeader = () => {
             <>
                 {search ? (
                     <>
-                        <div className="flex items-center justify-center py-5 gap-4 lg:hidden">
+                        <div className="flex items-center justify-center py-8 gap-4 lg:hidden">
                             <input
                                 type="text"
                                 placeholder="Search Faculty"
