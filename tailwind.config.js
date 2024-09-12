@@ -15,16 +15,16 @@ export default {
                 ssm: "320px",
             },
             animation: {
-                "loop-scroll-down": "loop-scroll-down 10s linear infinite",
-                "loop-scroll-up": "loop-scroll-up 10s linear infinite",
+                "loop-scroll-up": "loop-scroll-up 20s linear infinite",
+                "loop-scroll-down": "loop-scroll-down 20s linear infinite",
             },
             keyframes: {
-                "loop-scroll-down": {
-                    from: { transform: "translateY(0)" },
-                    to: { transform: "translateY(-50%)" },
-                },
                 "loop-scroll-up": {
-                    from: { transform: "translateY(-50%)" },
+                    from: { transform: "translateY(0)" },
+                    to: { transform: "translateY(-100%)" },
+                },
+                "loop-scroll-down": {
+                    from: { transform: "translateY(-100%)" },
                     to: { transform: "translateY(0)" },
                 },
             },
