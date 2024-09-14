@@ -18,14 +18,14 @@ const HomePageTitle = () => {
     }
 
     return (
-        <section className="flex flex-row items-start justify-between overflow-hidden">
-            <section className="flex flex-col w-[60%]">
-                <section className="flex flex-col items-start gap-8">
-                    <div className="flex flex-col items-start text-[4rem] font-bold -tracking-tight">
+        <section className="flex lg:flex-row flex-col items-start justify-between overflow-hidden">
+            <section className="flex flex-col lg:w-[60%] w-full">
+                <section className="flex flex-col lg:items-start items-center justify-center gap-8">
+                    <div className="flex flex-col lg:items-start items-center text-[4rem] font-bold -tracking-tight">
                         <p>Streamline</p>
                         <p>your Schedule</p>
                     </div>
-                    <div>
+                    <div className="flex items-center justify-center">
                         <Lottie animationData={animationData} loop={true} autoplay={true} style={{ width: "40%", height: "40%" }} />
                     </div>
                     <p className="max-w-[90%] text-gray-700 text-lg font-medium">
@@ -37,7 +37,7 @@ const HomePageTitle = () => {
                     </button>
                 </section>
             </section>
-            <section className="w-[40%] h-[80vh] flex gap-4 ">
+            <section className="w-[40%] h-[80vh] lg:flex gap-4 hidden ">
                 <section className="flex flex-col gap-12  overflow-hidden">
                     <div className="animate-loop-scroll-down gap-12 flex flex-col">
                         <img src="/lake.jpg" alt="" className="max-w-none" />
@@ -64,6 +64,22 @@ const HomePageTitle = () => {
                         <img src="/lake.jpg" alt="" className="max-w-none" />
                         <img src="/lake.jpg" alt="" className="max-w-none" />
                         <img src="/lake.jpg" alt="" className="max-w-none" />
+                    </div>
+                </section>
+            </section>
+            <section className="flex lg:hidden mt-[5rem]">
+                <section className="flex items-center gap-12">
+                    <div className="animate-loop-scroll-left gap-12 flex">
+                        <img src="/lake.jpg" alt="" className="max-w-[20rem]" />
+                        <img src="/lake.jpg" alt="" className="max-w-[20rem]" />
+                        <img src="/lake.jpg" alt="" className="max-w-[20rem]" />
+                        <img src="/lake.jpg" alt="" className="max-w-[20rem]" />
+                    </div>
+                    <div className="animate-loop-scroll-left gap-12 flex" aria-hidden="true">
+                        <img src="/lake.jpg" alt="" className="max-w-[20rem]" />
+                        <img src="/lake.jpg" alt="" className="max-w-[20rem]" />
+                        <img src="/lake.jpg" alt="" className="max-w-[20rem]" />
+                        <img src="/lake.jpg" alt="" className="max-w-[20rem]" />
                     </div>
                 </section>
             </section>

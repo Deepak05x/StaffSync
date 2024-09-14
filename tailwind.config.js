@@ -17,6 +17,7 @@ export default {
             animation: {
                 "loop-scroll-up": "loop-scroll-up 20s linear infinite",
                 "loop-scroll-down": "loop-scroll-down 20s linear infinite",
+                "loop-scroll-left": "loop-scroll-left 20s linear infinite",
             },
             keyframes: {
                 "loop-scroll-up": {
@@ -26,6 +27,10 @@ export default {
                 "loop-scroll-down": {
                     from: { transform: "translateY(-100%)" },
                     to: { transform: "translateY(0)" },
+                },
+                "loop-scroll-left": {
+                    from: { transform: "translateX(0)" },
+                    to: { transform: "translateX(-100%)" },
                 },
             },
             colors: {
