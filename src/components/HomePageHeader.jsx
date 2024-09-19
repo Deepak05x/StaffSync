@@ -21,7 +21,7 @@ const HomePageHeader = () => {
 
     return (
         <nav>
-            <section className="lg:flex hidden w-full items-center justify-between py-5 px-10">
+            <section className="lg:flex hidden w-full items-center justify-between py-5 xl:px-12 lg:px-8">
                 <Logo />
                 {search && (
                     <div className="flex-1 xl:px-12 lg:px-8">
@@ -66,7 +66,7 @@ const HomePageHeader = () => {
                             {menu ? (
                                 <>
                                     <IoClose onClick={() => toggleMenu()} className="relative" />
-                                    <div className="absolute bg-dark dark:bg-light w-[15rem] h-[20rem] top-[15%] right-[5%] rounded-lg flex items-center justify-center flex-col gap-8 ">
+                                    <div className="absolute z-30 bg-dark dark:bg-light w-[15rem] h-[20rem] top-[15%] right-[5%] rounded-lg flex items-center justify-center flex-col gap-8 ">
                                         <img src="/img13.jpg" alt="profile" className="w-[3rem] h-[3rem] rounded-full" />
                                         <p className="text-dark text-lg hover:underline hover:underline-offset-2 bg-light dark:bg-dark dark:text-light px-4 py-2 rounded-lg">View Request</p>
                                         <ThemeToggler />

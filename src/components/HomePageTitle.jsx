@@ -14,21 +14,20 @@ const HomePageTitle = () => {
         fetchAnimationData();
     }, []);
     if (!animationData) {
-        return <div>Loading...</div>;
+        return <div></div>;
     }
 
     return (
-        <section className="flex lg:flex-row flex-col items-start justify-between overflow-hidden">
-            <section className="flex flex-col lg:w-[60%] w-full">
+        <section className="flex lg:flex-row flex-col w-full items-start justify-between overflow-hidden">
+            <section className="flex flex-col items-start lg:w-[60%] w-full">
                 <section className="flex flex-col lg:items-start items-center justify-center gap-8">
-                    <div className="flex flex-col lg:items-start items-center text-[4rem] font-bold -tracking-tight">
-                        <p>Streamline</p>
-                        <p>your Schedule</p>
+                    <div className="flex flex-col lg:items-start items-center md:text-[4rem] sm:text-[3rem] ssm:text-[2.5rem] font-bold -tracking-tight">
+                        Streamline<span>Your Schedule</span>
                     </div>
-                    <div className="flex items-center justify-center">
+                    <div className="flex items-start lg:justify-start justify-center">
                         <Lottie animationData={animationData} loop={true} autoplay={true} style={{ width: "40%", height: "40%" }} />
                     </div>
-                    <p className="max-w-[90%] text-gray-700 text-lg font-medium">
+                    <p className="max-w-[90%] text-gray-700 text-lg lg:text-start text-center font-medium">
                         Effortlessly manage and book staff appointments with just a few taps. Whether you are booking a meeting, a consultation, or any other type of appointment, our intuitive
                         platform makes it quick and simple. Say goodbye to scheduling conflicts and hello to seamless organization.
                     </p>

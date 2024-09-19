@@ -17,11 +17,11 @@ const LoginForm = () => {
             <h1 className="lg:text-4xl ssm:text-[2.6rem] font-medium">Welcome Back</h1>
             <section className="flex flex-col items-center gap-4 sm:mt-0 ssm:mt-[2rem]">
                 <div className="bg-lightgrey px-8 py-4 rounded-full flex items-center sm:gap-12 ssm:gap-2">
-                    <input type="email" placeholder="Email" className="text-dark bg-inherit outline-none border-none text-lg" />
+                    <input type="email" name="email" placeholder="Email" className="text-dark bg-inherit outline-none border-none text-lg" />
                     <IoIosMail className="text-xl" />
                 </div>
                 <div className="bg-lightgrey px-8 py-4 rounded-full flex items-center sm:gap-12 ssm:gap-2">
-                    <input type={`${pass ? "text" : "password"}`} placeholder="Password" className="text-dark bg-inherit outline-none border-none text-lg" />
+                    <input type={`${pass ? "text" : "password"}`} name="password" placeholder="Password" className="text-dark bg-inherit outline-none border-none text-lg" />
                     {pass ? <IoIosClose className="text-xl cursor-pointer" onClick={() => togglePass()} /> : <IoEye className="text-xl cursor-pointer" onClick={() => togglePass()} />}
                 </div>
             </section>
