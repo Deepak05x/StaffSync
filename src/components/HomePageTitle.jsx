@@ -39,30 +39,30 @@ const HomePageTitle = () => {
             <section className="w-[40%] h-[80vh] lg:flex gap-4 hidden ">
                 <section className="flex flex-col gap-12  overflow-hidden">
                     <div className="animate-loop-scroll-down gap-12 flex flex-col">
-                        <img src="/lake.jpg" alt="" className="max-w-none" />
-                        <img src="/lake.jpg" alt="" className="max-w-none" />
-                        <img src="/lake.jpg" alt="" className="max-w-none" />
-                        <img src="/lake.jpg" alt="" className="max-w-none" />
+                        <img src="/lake.jpg" alt="" className="max-w-none rounded-md" />
+                        <img src="/lake.jpg" alt="" className="max-w-none rounded-md" />
+                        <img src="/lake.jpg" alt="" className="max-w-none rounded-md" />
+                        <img src="/lake.jpg" alt="" className="max-w-none rounded-md" />
                     </div>
                     <div className="animate-loop-scroll-down gap-12 flex flex-col" aria-hidden="true">
-                        <img src="/lake.jpg" alt="" className="max-w-none" />
-                        <img src="/lake.jpg" alt="" className="max-w-none" />
-                        <img src="/lake.jpg" alt="" className="max-w-none" />
-                        <img src="/lake.jpg" alt="" className="max-w-none" />
+                        <img src="/lake.jpg" alt="" className="max-w-none rounded-md" />
+                        <img src="/lake.jpg" alt="" className="max-w-none rounded-md" />
+                        <img src="/lake.jpg" alt="" className="max-w-none rounded-md" />
+                        <img src="/lake.jpg" alt="" className="max-w-none rounded-md" />
                     </div>
                 </section>
                 <section className="flex flex-col gap-12 overflow-hidden">
                     <div className="animate-loop-scroll-up gap-12 flex flex-col">
-                        <img src="/lake.jpg" alt="" className="max-w-none" />
-                        <img src="/lake.jpg" alt="" className="max-w-none" />
-                        <img src="/lake.jpg" alt="" className="max-w-none" />
-                        <img src="/lake.jpg" alt="" className="max-w-none" />
+                        <img src="/lake.jpg" alt="" className="max-w-none rounded-md" />
+                        <img src="/lake.jpg" alt="" className="max-w-none rounded-md" />
+                        <img src="/lake.jpg" alt="" className="max-w-none rounded-md" />
+                        <img src="/lake.jpg" alt="" className="max-w-none rounded-md" />
                     </div>
                     <div className="animate-loop-scroll-up gap-12 flex flex-col" aria-hidden="true">
-                        <img src="/lake.jpg" alt="" className="max-w-none" />
-                        <img src="/lake.jpg" alt="" className="max-w-none" />
-                        <img src="/lake.jpg" alt="" className="max-w-none" />
-                        <img src="/lake.jpg" alt="" className="max-w-none" />
+                        <img src="/lake.jpg" alt="" className="max-w-none rounded-md" />
+                        <img src="/lake.jpg" alt="" className="max-w-none rounded-md" />
+                        <img src="/lake.jpg" alt="" className="max-w-none rounded-md" />
+                        <img src="/lake.jpg" alt="" className="max-w-none rounded-md" />
                     </div>
                 </section>
             </section>

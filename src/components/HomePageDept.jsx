@@ -9,32 +9,32 @@ const cards = [
     {
         image: <MdOutlineScience />,
         title: "Faculty of Science and Humanitites",
-        color: "bg-pink-200",
+        color: "bg-[#dad6b1]",
     },
     {
         image: <GrTechnology />,
         title: "Engineering & Technology",
-        color: "bg-green-200",
+        color: "bg-[#f0cbce]",
     },
     {
         image: <FaBriefcaseMedical />,
         title: "Medical Science",
-        color: "bg-blue-200",
+        color: "bg-[#b6e6d2]",
     },
     {
         image: <GoLaw />,
         title: "Law",
-        color: "bg-blue-200",
+        color: "bg-[#f0cbdf]",
     },
     {
         image: <PiCookingPotBold />,
         title: "Hotel Management",
-        color: "bg-green-200",
+        color: "bg-[#dacbf0]",
     },
     {
         image: <FaBriefcaseMedical />,
         title: "Hotel Management",
-        color: "bg-blue-200",
+        color: "bg-[#d8f0cb]",
     },
 ];
 
