@@ -28,7 +28,7 @@ const HomePageTitle = () => {
                     <div className="flex items-start lg:justify-start justify-center ">
                         <Lottie animationData={animationData} loop={true} autoplay={true} style={{ width: "40%", height: "40%" }} />
                     </div>
-                    <p className="max-w-[90%] text-gray-700 text-lg lg:text-start text-center font-medium">
+                    <p className="max-w-[90%] text-gray-700 dark:text-lightgrey text-lg lg:text-start text-center font-medium">
                         Effortlessly manage and book staff appointments with just a few taps. Whether you are booking a meeting, a consultation, or any other type of appointment, our intuitive
                         platform makes it quick and simple. Say goodbye to scheduling conflicts and hello to seamless organization.
                     </p>

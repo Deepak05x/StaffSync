@@ -32,7 +32,7 @@ const Staff = () => {
             <Navbar />
             <section className="flex flex-col items-center justify-center gap-8 xl:px-12 lg:px-8 sm:px-4 ssm:px-2 text-dark dark:text-light">
                 <h1 className="md:text-[4rem] sm:text-[3rem] ssm:text-[2.5rem] font-bold -tracking-tight text-center px-8">Meet Our Esteemed Faculty</h1>
-                <p className="md:text-xl ssm:text-lg md:max-w-[80vw] ssm:max-w-[90vw] text-center">
+                <p className="md:text-xl ssm:text-lg md:max-w-[80vw] ssm:max-w-[90vw] text-center ">
                     Our faculty members are the backbone of our institution, bringing years of experience, knowledge, and passion to the classroom. Each educator is dedicated to fostering a learning
                     environment that encourages curiosity, innovation, and academic excellence. Explore their profiles to learn more about their qualifications and schedules.
                 </p>
