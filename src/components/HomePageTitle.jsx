@@ -1,6 +1,7 @@
 import Lottie from "lottie-react";
 import React, { useEffect, useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const HomePageTitle = () => {
     const [animationData, setAnimationData] = useState(null);
@@ -24,16 +25,18 @@ const HomePageTitle = () => {
                     <div className="flex flex-col lg:items-start items-center md:text-[4rem] sm:text-[3rem] ssm:text-[2.5rem] font-bold -tracking-tight">
                         Streamline<span>Your Schedule</span>
                     </div>
-                    <div className="flex items-start lg:justify-start justify-center">
+                    <div className="flex items-start lg:justify-start justify-center ">
                         <Lottie animationData={animationData} loop={true} autoplay={true} style={{ width: "40%", height: "40%" }} />
                     </div>
                     <p className="max-w-[90%] text-gray-700 text-lg lg:text-start text-center font-medium">
                         Effortlessly manage and book staff appointments with just a few taps. Whether you are booking a meeting, a consultation, or any other type of appointment, our intuitive
                         platform makes it quick and simple. Say goodbye to scheduling conflicts and hello to seamless organization.
                     </p>
-                    <button className="flex items-center bg-dark rounded-full flex-row text-light px-6 gap-2 text-center text-lg py-3">
-                        <FaArrowRight /> Get Started
-                    </button>
+                    <Link to={"/staff"}>
+                        <button className="flex items-center bg-dark rounded-full flex-row text-light dark:bg-light dark:text-dark px-6 gap-2 text-center text-lg py-3">
+                            <FaArrowRight /> Get Started
+                        </button>
+                    </Link>
                 </section>
             </section>
             <section className="w-[40%] h-[80vh] lg:flex gap-4 hidden ">

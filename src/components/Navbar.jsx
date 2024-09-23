@@ -4,10 +4,10 @@ import { IoIosSearch, IoMdMenu } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 import { useState } from "react";
 
-const Logo = lazy(() => import("../components/Logo.jsx"));
-const ThemeToggler = lazy(() => import("../components/ThemeToggler.jsx"));
+const Logo = lazy(() => import("./Logo.jsx"));
+const ThemeToggler = lazy(() => import("./ThemeToggler.jsx"));
 
-const HomePageHeader = () => {
+const Navbar = () => {
     const [search, setSearch] = useState(false);
     const [menu, setMenu] = useState(false);
 
@@ -83,4 +83,4 @@ const HomePageHeader = () => {
     );
 };
 
-export default HomePageHeader;
+export default Navbar;

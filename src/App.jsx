@@ -6,6 +6,7 @@ const Home = lazy(() => import("./container/Home.jsx"));
 const Login = lazy(() => import("./container/Login.jsx"));
 const SignUp = lazy(() => import("./container/SignUp.jsx"));
 const Profile = lazy(() => import("./container/Profile.jsx"));
+const Staff = lazy(() => import("./container/Staff.jsx"));
 
 const App = () => {
     return (
@@ -17,6 +18,7 @@ const App = () => {
                         <Route element={<SignUp />} path="/signup" />
                         <Route element={<Home />} path="/home" />
                         <Route element={<Profile />} path="/profile" />
+                        <Route element={<Staff />} path="/staff" />
                     </Routes>
                 </Suspense>
             </ThemeProvider>

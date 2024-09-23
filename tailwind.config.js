@@ -11,7 +11,6 @@ export default {
             "2xl": "1440px",
         },
         extend: {
-           
             screens: {
                 ssm: "320px",
             },
