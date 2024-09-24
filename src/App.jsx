@@ -7,6 +7,7 @@ const Login = lazy(() => import("./container/Login.jsx"));
 const SignUp = lazy(() => import("./container/SignUp.jsx"));
 const Profile = lazy(() => import("./container/Profile.jsx"));
 const Staff = lazy(() => import("./container/Staff.jsx"));
+const Booking = lazy(() => import("./container/Booking.jsx"));
 
 const App = () => {
     return (
@@ -19,6 +20,7 @@ const App = () => {
                         <Route element={<Home />} path="/home" />
                         <Route element={<Profile />} path="/profile" />
                         <Route element={<Staff />} path="/staff" />
+                        <Route element={<Booking />} path="/booking" />
                     </Routes>
                 </Suspense>
             </ThemeProvider>

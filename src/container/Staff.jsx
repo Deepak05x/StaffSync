@@ -1,5 +1,6 @@
 import React from "react";
 import { lazy } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = lazy(() => import("../components/Navbar"));
 
@@ -42,7 +43,9 @@ const Staff = () => {
                             <img src={item.image} alt="profile" className="w-[12rem] h-[12rem] rounded-lg" />
                             <p className="font-semibold text-lg">{item.name}</p>
                             <p className="text-lg font-medium">{item.qualification}</p>
-                            <button className="bg-dark text-light dark:text-dark dark:bg-light px-8 py-2 rounded-full">Schedule</button>
+                            <Link to={"/booking"}>
+                                <button className="bg-dark text-light dark:text-dark dark:bg-light px-8 py-2 rounded-full">Schedule</button>
+                            </Link>
                         </div>
                     ))}
                 </div>
