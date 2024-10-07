@@ -5,6 +5,7 @@ import { MdOutlineScience } from "react-icons/md";
 import { GoLaw } from "react-icons/go";
 import { PiCookingPotBold } from "react-icons/pi";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const cards = [
     {
@@ -42,7 +43,14 @@ const cards = [
 
 const HomePageDept = () => {
     return (
-        <section id="dept" className="py-24 w-full flex flex-col gap-12 lg:items-start items-center justify-center">
+        <motion.section
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3 }}
+            viewport={{ once: true }}
+            id="dept"
+            className="py-24 w-full flex flex-col gap-12 lg:items-start items-center justify-center"
+        >
             <h1 className="md:text-[4rem] sm:text-[3rem] ssm:text-[2.5rem] flex flex-col lg:items-start items-center font-bold">
                 Uncover <span className="text-center">Your department</span>
             </h1>
@@ -54,7 +62,7 @@ const HomePageDept = () => {
                     </Link>
                 ))}
             </div>
-        </section>
+        </motion.section>
     );
 };
 

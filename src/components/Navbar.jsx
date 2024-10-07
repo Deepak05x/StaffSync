@@ -4,6 +4,7 @@ import { IoIosSearch, IoMdMenu } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Logo = lazy(() => import("./Logo.jsx"));
 const ThemeToggler = lazy(() => import("./ThemeToggler.jsx"));
@@ -21,7 +22,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav>
+        <motion.nav initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
             <section className="lg:flex hidden w-full items-center justify-between py-5 xl:px-12 lg:px-8">
                 <Logo />
                 {search && (
@@ -88,7 +89,7 @@ const Navbar = () => {
                     </section>
                 )}
             </>
-        </nav>
+        </motion.nav>
     );
 };
 

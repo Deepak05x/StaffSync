@@ -1,7 +1,7 @@
 import Lottie from "lottie-react";
 import React, { useEffect, useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { easeInOut, motion } from "framer-motion";
 
 const HomePageTitle = () => {
     const [animationData, setAnimationData] = useState(null);
@@ -19,8 +19,14 @@ const HomePageTitle = () => {
     }
 
     return (
-        <section className="flex lg:flex-row flex-col w-full items-start justify-between overflow-hidden">
-            <section className="flex flex-col items-start lg:w-[60%] w-full">
+        <motion.section
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3 }}
+            viewport={{ once: true }}
+            className="flex lg:flex-row flex-col w-full items-start justify-between overflow-hidden"
+        >
+            <section initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="flex flex-col items-start lg:w-[60%] w-full">
                 <section className="flex flex-col lg:items-start items-center justify-center gap-8">
                     <div className="flex flex-col lg:items-start items-center md:text-[4rem] sm:text-[3rem] ssm:text-[2.5rem] font-bold -tracking-tight">
                         Streamline<span>Your Schedule</span>
@@ -85,7 +91,7 @@ const HomePageTitle = () => {
                     </div>
                 </section>
             </section>
-        </section>
+        </motion.section>
     );
 };
 

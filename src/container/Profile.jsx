@@ -7,13 +7,20 @@ import { IoMail } from "react-icons/io5";
 import { MdLogout, MdOutlineHelpCenter } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { lazy } from "react";
+import { motion } from "framer-motion";
 
 const Footer = lazy(() => import("../components/Footer"));
 
 export default function Profile() {
     return (
         <>
-            <div className="flex flex-col bg-gray-200 min-h-screen w-full gap-4">
+            <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3 }}
+                viewport={{ once: true }}
+                className="flex flex-col bg-gray-200 min-h-screen w-full gap-4"
+            >
                 {/* BG AND PROFILE */}
                 <section className='bg-[url("../public/pfpbg.jpeg")] flex flex-col gap-24  w-full'>
                     <div className="flex-row flex justify-start p-4 items-start mt-5  ">
@@ -71,7 +78,7 @@ export default function Profile() {
                         </div>
                     </section>
                 </section>
-            </div>
+            </motion.div>
             <Footer />
         </>
     );

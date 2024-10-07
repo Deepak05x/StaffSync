@@ -4,6 +4,7 @@ import { IoEye } from "react-icons/io5";
 import { IoIosClose } from "react-icons/io";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { CgProfile } from "react-icons/cg";
 import { motion } from "framer-motion";
 
 const SignUpForm = () => {
@@ -19,8 +20,9 @@ const SignUpForm = () => {
             <section className="flex flex-col items-center gap-4 sm:mt-0 ssm:mt-[2rem]">
                 <div className="bg-lightgrey px-8 py-4 rounded-full flex items-center sm:gap-12 ssm:gap-2">
                     <input type="text" placeholder="Name" className="text-dark bg-inherit outline-none border-none text-lg" />
+                    <CgProfile className="text-xl" />
                 </div>
-                <select name="" id="">
+                <select name="" id="" className="bg-lightgrey px-8 py-4 rounded-full flex items-center sm:gap-12 ssm:gap-2">
                     <option value="Computer Applications">Computer Applications</option>
                 </select>
                 <div className="bg-lightgrey px-8 py-4 rounded-full flex items-center sm:gap-12 ssm:gap-2">

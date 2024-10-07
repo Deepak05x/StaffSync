@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
-const Logo = lazy(() => import("../components/Logo.jsx"));
+const NoLogo = lazy(() => import("../components/NoLogo.jsx"));
 const Image = lazy(() => import("../components/Image.jsx"));
 const LoginForm = lazy(() => import("../components/LoginForm.jsx"));
 
@@ -57,7 +57,7 @@ const Login = () => {
                     >
                         <div className="lg:w-[60%] ssm:w-[100%] h-full">
                             <div className="xl:px-8 lg:px-6 sm:px-4 ssm:px-2 py-4 h-[10%]">
-                                <Logo />
+                                <NoLogo />
                             </div>
                             <div className="flex items-center justify-center h-[90%]">
                                 <LoginForm />

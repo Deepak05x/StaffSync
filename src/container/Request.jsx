@@ -1,5 +1,6 @@
 import React from "react";
 import { lazy } from "react";
+import { motion } from "framer-motion";
 
 const Navbar = lazy(() => import("../components/Navbar"));
 
@@ -7,7 +8,13 @@ const Request = () => {
     return (
         <section className="min-h-screen flex flex-col">
             <Navbar />
-            <section className="xl:px-12 lg:px-8 sm:px-4 ssm:px-2 flex py-8 flex-col gap-12">
+            <motion.section
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3 }}
+                viewport={{ once: true }}
+                className="xl:px-12 lg:px-8 sm:px-4 ssm:px-2 flex py-8 flex-col gap-12"
+            >
                 <div className="flex flex-col items-center md:text-[3rem] sm:text-[2rem] ssm:text-[1.5rem] font-bold -tracking-tight">View Request</div>
                 <div className="">
                     <div className="flex flex-col items-center bg-dark/5  rounded-lg p-8 gap-8">
@@ -26,7 +33,7 @@ const Request = () => {
                         </p>
                     </div>
                 </div>
-            </section>
+            </motion.section>
         </section>
     );
 };
