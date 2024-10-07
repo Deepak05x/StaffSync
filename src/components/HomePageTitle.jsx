@@ -32,11 +32,11 @@ const HomePageTitle = () => {
                         Effortlessly manage and book staff appointments with just a few taps. Whether you are booking a meeting, a consultation, or any other type of appointment, our intuitive
                         platform makes it quick and simple. Say goodbye to scheduling conflicts and hello to seamless organization.
                     </p>
-                    <Link to={"/staff"}>
+                    <a href={"#dept"}>
                         <button className="flex items-center bg-dark rounded-full flex-row text-light dark:bg-light dark:text-dark px-6 gap-2 text-center text-lg py-3">
                             <FaArrowRight /> Get Started
                         </button>
-                    </Link>
+                    </a>
                 </section>
             </section>
             <section className="w-[40%] h-[80vh] lg:flex gap-4 hidden ">

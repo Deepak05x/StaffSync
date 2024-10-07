@@ -32,12 +32,12 @@ const Booking = () => {
                                 <option value="">MCA</option>
                             </select>
                         </div>
-                        <div className="flex flex-col lg:items-start items-center gap-2 lg:w-full">
+                        {/* <div className="flex flex-col lg:items-start items-center gap-2 lg:w-full">
                             <p className="text-2xl font-medium">Select Staff</p>
                             <select name="" id="" className="border-dark border-2 p-4 lg:w-[70%] w-[90%]  rounded-lg text-lg font-medium text-dark focus:outline-none">
                                 <option value="">Abdur Raheem</option>
                             </select>
-                        </div>
+                        </div> */}
                         <div className="flex flex-col lg:items-start items-center gap-2 lg:w-full ">
                             <p className="text-2xl font-medium">Meeting Date</p>
                             <input type="date" className="border-dark border-2 p-4 lg:w-[70%] w-[90%]  rounded-lg text-lg font-medium text-dark focus:outline-none" />
