@@ -18,6 +18,12 @@ const SignUpForm = () => {
             <h1 className="lg:text-4xl ssm:text-[2.6rem] font-medium">Register Now</h1>
             <section className="flex flex-col items-center gap-4 sm:mt-0 ssm:mt-[2rem]">
                 <div className="bg-lightgrey px-8 py-4 rounded-full flex items-center sm:gap-12 ssm:gap-2">
+                    <input type="text" placeholder="Name" className="text-dark bg-inherit outline-none border-none text-lg" />
+                </div>
+                <select name="" id="">
+                    <option value="Computer Applications">Computer Applications</option>
+                </select>
+                <div className="bg-lightgrey px-8 py-4 rounded-full flex items-center sm:gap-12 ssm:gap-2">
                     <input type="email" placeholder="Email" className="text-dark bg-inherit outline-none border-none text-lg" />
                     <IoIosMail className="text-xl" />
                 </div>
@@ -25,19 +31,15 @@ const SignUpForm = () => {
                     <input type={`${pass ? "text" : "password"}`} placeholder="Password" className="text-dark bg-inherit outline-none border-none text-lg" />
                     {pass ? <IoIosClose className="text-xl cursor-pointer" onClick={() => togglePass()} /> : <IoEye className="text-xl cursor-pointer" onClick={() => togglePass()} />}
                 </div>
-                <div className="bg-lightgrey px-8 py-4 rounded-full flex items-center sm:gap-12 ssm:gap-2">
-                    <input type={`${pass ? "text" : "password"}`} placeholder="Confirm Password" className="text-dark bg-inherit outline-none border-none text-lg" />
-                    {pass ? <IoIosClose className="text-xl cursor-pointer" onClick={() => togglePass()} /> : <IoEye className="text-xl cursor-pointer" onClick={() => togglePass()} />}
-                </div>
             </section>
             <section className="flex flex-row items-center gap-8 sm:py-0 ssm:py-[1rem]">
                 <div className="flex items-center gap-2 text-xl font-medium">
-                    <input type="radio" id="student" name="sign" />
+                    <input type="radio" id="student" name="sign" value="Student" />
                     <label htmlFor="student">Student</label>
                 </div>
                 <div className="flex items-center gap-2 text-xl font-medium">
-                    <input type="radio" id="teacher" name="sign" />
-                    <label htmlFor="teacher">Faculty</label>
+                    <input type="radio" id="teacher" name="sign" value="Staff" />
+                    <label htmlFor="teacher">Staff</label>
                 </div>
             </section>
 

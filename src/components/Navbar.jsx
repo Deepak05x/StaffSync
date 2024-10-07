@@ -3,6 +3,7 @@ import { lazy } from "react";
 import { IoIosSearch, IoMdMenu } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Logo = lazy(() => import("./Logo.jsx"));
 const ThemeToggler = lazy(() => import("./ThemeToggler.jsx"));
@@ -33,36 +34,44 @@ const Navbar = () => {
                     </div>
                 )}
                 <div className="flex items-center gap-6">
-                    {search ? (
+                    {/* {search ? (
                         <IoClose className="text-4xl" onClick={() => toggleSearch(false)} />
                     ) : (
                         <IoIosSearch onClick={() => toggleSearch()} className="text-[3rem] px-3 py-2 font-bold cursor-pointer bg-dark text-light dark:bg-light dark:text-dark rounded-full" />
-                    )}
+                    )} */}
 
                     <ThemeToggler />
-                    <button aria-label="Request" className="bg-dark dark:bg-light dark:text-dark dark:font-semibold text-white rounded-xl px-6 py-3">
-                        View Request
-                    </button>
-                    <img src="/img13.jpg" alt="profile" className="w-[3rem] h-[3rem] rounded-full" />
+                    <Link to={"/request"}>
+                        <button aria-label="Request" className="bg-dark dark:bg-light dark:text-dark dark:font-semibold text-white rounded-xl px-6 py-3">
+                            View Request
+                        </button>
+                    </Link>
+
+                    <Link to={"/profile"}>
+                        <img src="/img13.jpg" alt="profile" className="w-[3rem] h-[3rem] rounded-full" />
+                    </Link>
                 </div>
             </section>
             <>
                 {search ? (
                     <>
-                        <div className="flex items-center justify-center py-8 gap-4 lg:hidden">
+                        {/* <div className="flex items-center justify-center py-8 gap-4 lg:hidden">
                             <input
                                 type="text"
                                 placeholder="Search Faculty"
                                 className="border-dark dark:bg-dark dark:border-light border-2 text-xl px-8 py-2 rounded-xl sm:w-[80%] ssm:w-[70%] outline-none dark:border-[1.9px]"
                             />
                             <IoClose className="text-4xl" onClick={() => toggleSearch(false)} />
-                        </div>
+                        </div> */}
                     </>
                 ) : (
                     <section className="flex lg:hidden items-center justify-between py-5 md:px-10 sm:px-7 ssm:px-5">
                         <Logo />
                         <div className="text-4xl flex items-center sm:gap-8 ssm:gap-4">
-                            <IoIosSearch onClick={() => toggleSearch()} className="text-[3rem] px-3 py-2 font-bold cursor-pointer bg-dark text-light dark:bg-light dark:text-dark rounded-full" />
+                            <IoIosSearch
+                                onClick={() => toggleSearch()}
+                                className="text-[3rem] px-3 py-2 font-bold cursor-pointer bg-dark text-light dark:bg-light dark:text-dark rounded-full hidden"
+                            />
                             {menu ? (
                                 <>
                                     <IoClose onClick={() => toggleMenu()} className="relative" />

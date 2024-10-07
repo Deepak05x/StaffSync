@@ -26,7 +26,7 @@ const Booking = () => {
                 <h1 className="md:text-[4rem] sm:text-[3rem] ssm:text-[2.5rem] font-bold -tracking-tight lg:text-start text-center">Book Your Appointment</h1>
                 <section className="flex items-center justify-between w-full p-4 lg:flex-row flex-col gap-12">
                     <div className="flex flex-col gap-12 lg:w-[50%] w-full lg:items-start lg:order-1 order-2">
-                        <div className="flex flex-col lg:items-start items-center gap-2 w-full">
+                        <div className="flex flex-col lg:items-start items-center gap-2 w-full hidden">
                             <p className="text-2xl font-medium">Select Department</p>
                             <select name="" id="" className="border-dark border-2 p-4 lg:w-[70%] w-[90%] text-dark  rounded-lg text-lg font-medium focus:outline-none">
                                 <option value="">MCA</option>

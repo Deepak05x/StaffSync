@@ -25,7 +25,7 @@ const LoginForm = () => {
                     {pass ? <IoIosClose className="text-xl cursor-pointer" onClick={() => togglePass()} /> : <IoEye className="text-xl cursor-pointer" onClick={() => togglePass()} />}
                 </div>
             </section>
-            <section className="flex flex-row items-center gap-8 sm:py-0 ssm:py-[1rem]">
+            <section className="flex flex-row items-center gap-8 sm:py-0 ssm:py-[1rem] hidden">
                 <div className="flex items-center gap-2 text-xl font-medium">
                     <input type="radio" id="student" name="sign" />
                     <label htmlFor="student">Student</label>
