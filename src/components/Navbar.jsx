@@ -48,9 +48,12 @@ const Navbar = () => {
                         </button>
                     </Link>
 
-                    <Link to={"/profile"}>
+                    {/* <Link to={"/profile"}>
                         <img src="/img13.jpg" alt="profile" className="w-[3rem] h-[3rem] rounded-full" />
-                    </Link>
+                    </Link> */}
+                    <div className="flex flex-col items-end">
+                        <p className="font-bold text-xl outline outline-black dark:outline-white rounded-full py-2 px-4 outline-1">Deepak H</p>
+                    </div>
                 </div>
             </section>
             <>
